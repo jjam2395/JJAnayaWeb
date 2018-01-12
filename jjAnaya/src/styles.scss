@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-color: #222;
+  background-color: #fff;
 }
 /* ---------------------------------------------------*/
 /* Basic Setup */
@@ -67,25 +67,42 @@ a{
 ------..COVER..--------
 ----------------------*/
 
-.no-video .video-container video,
-.touch .video-container video {
-    display: flex;
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
 }
 .no-video .video-container .poster,
 .touch .video-container .poster {
-    display: flex;
+    display: block !important;
 }
 .video-container {
-    display: flex;
+    position: relative;
+    top: 0%;
+    left: 0%;
     height: 100%;
     width: 100%;
+    background: #fff;
     overflow: hidden;
-    background-image: url(/assets/Writing-Working.jpg);
+
 }
 .video-container .poster img {
-  display: flex;
     width: 100%;
+    bottom: 0;
+    position: absolute;
 }
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
 .video-container .filter {
     display: flex;
     flex-direction: column;
@@ -93,14 +110,24 @@ a{
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
+}*/
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
 
 nav{
-  width: 50%;
+width: 70%;
 }
 
 
 .title-box{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -127,18 +154,11 @@ nav{
 
 
 .subtitle{
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
-
-.video-container video {
-
-}
-.video-container video.fillWidth {
-    //width: 100%;
-    height: 100vh;
+  height: 30vh;
+  margin: 0;
 }
 
 
@@ -151,13 +171,23 @@ nav{
 /*small tablets to  big tablets from 768px to 1023px*/
 @media only screen and (max-width:1023px){
   body{font-size: 14pt;}
-
+width: 100%;
 
 }
 
 /*small phones to  small tablets from 481px to 767px*/
 @media only screen and (max-width:767px){
 body{font-size: 12pt;}
+nav{
+  width: 70%;}
+  .title-box{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    .social-links{
+      width: 100%;
+    }
+  }
 
 /*.navigation-box{
   /*margin: 1.5rem 0;
@@ -170,5 +200,12 @@ body{font-size: 12pt;}
 
 /*small phones 0 to 480px*/
 @media only screen and (max-width:480px){
+  nav{
+    width: 50%;}
+h1{
+  body{
+    font-size: 150%;
+  }
+}
 
 }
