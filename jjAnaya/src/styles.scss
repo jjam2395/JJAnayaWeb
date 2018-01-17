@@ -1,28 +1,15 @@
+
 /* You can add global styles to this file, and also import other style files */
-body{
-  background-color: #fff;
-}
+@import "base";
+@import "layout";
+
 /* ---------------------------------------------------*/
 /* Basic Setup */
 /* ---------------------------------------------------*/
-$color-primary: #00abff;
 
-*{
-  padding: 0;
-  margin:0;
-  box-sizing: border-box;
-}
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
-}
-
-html{
-  color: $color-primary;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16pt;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
 }
 
 /* -------- Headings -------- */
@@ -64,102 +51,19 @@ a{
 
 
 /*---------------------
-------..COVER..--------
+------..HEADER..--------
 ----------------------*/
-
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    overflow: hidden;
-
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutme-box{
+  padding-top: 3rem;
+  background-color: #fff;
 }
 
-/*
-.video-container .filter {
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-}*/
-
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
+.title-main{
+ font-size: 175%;
+ word-spacing: .2rem;
+  color: var(--color-secondary);
 }
 
-nav{
-width: 70%;
-}
-
-
-.title-box{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: .5rem 0;
-  .social-links{
-    width: 50%;
-  }
-}
-
-.navigation-box{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  margin: 1.5rem 0;
-  align-items: center;
-/*  li{
-    margin: .3rem 2rem;
-  }*/
-}
-
-
-.subtitle{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 30vh;
-  margin: 0;
-}
 
 
 
@@ -171,20 +75,27 @@ width: 70%;
 /*small tablets to  big tablets from 768px to 1023px*/
 @media only screen and (max-width:1023px){
   body{font-size: 14pt;}
-width: 100%;
+  /*.hidden{
+    display: block;
+  }
+*/
 
 }
 
 /*small phones to  small tablets from 481px to 767px*/
 @media only screen and (max-width:767px){
+
 body{font-size: 12pt;}
 nav{
-  width: 70%;}
+  width: 100%;}
   .title-box{
     display: flex;
     align-items: center;
     margin: .5rem 0;
     .social-links{
+      width: 100%;
+    }
+    h1{
       width: 100%;
     }
   }
@@ -200,8 +111,15 @@ nav{
 
 /*small phones 0 to 480px*/
 @media only screen and (max-width:480px){
+  .filter{
+    align-items: center;
+  }
   nav{
-    width: 50%;}
+    width: 50%;
+    ul li{
+      margin-top: .5em;
+    }
+  }
 h1{
   body{
     font-size: 150%;
