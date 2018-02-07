@@ -3,6 +3,7 @@
 @import "base";
 @import "layout";
 
+
 /* ---------------------------------------------------*/
 /* Basic Setup */
 /* ---------------------------------------------------*/
@@ -10,6 +11,7 @@
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
+  color: #555555;
 }
 
 /* -------- Headings -------- */
@@ -53,77 +55,24 @@ a{
 /*---------------------
 ------..HEADER..--------
 ----------------------*/
-.aboutme-box{
-  padding-top: 3rem;
-  background-color: #fff;
-}
+
 
 .title-main{
  font-size: 175%;
  word-spacing: .2rem;
-  color: var(--color-secondary);
+color: var(--color-gray-dark);
 }
 
-
-
-
-/* Big tablets to 1200px (widths smaller that the 1140px row)*/
-@media only screen and (max-width:1200px){
-
-}
-
-/*small tablets to  big tablets from 768px to 1023px*/
-@media only screen and (max-width:1023px){
-  body{font-size: 14pt;}
-  /*.hidden{
-    display: block;
-  }
-*/
+.short-text{
+  color: --color-gray-dark;
+  line-height: 145%;
+  width: 70%;
+  padding-bottom: 10rem;
 
 }
 
-/*small phones to  small tablets from 481px to 767px*/
-@media only screen and (max-width:767px){
-
-body{font-size: 12pt;}
-nav{
-  width: 100%;}
-  .title-box{
-    display: flex;
-    align-items: center;
-    margin: .5rem 0;
-    .social-links{
-      width: 100%;
-    }
-    h1{
-      width: 100%;
-    }
-  }
-
-/*.navigation-box{
-  /*margin: 1.5rem 0;
-  li{
-    margin: .3rem .8rem;
-  }*/
-//}
-
-}
-
-/*small phones 0 to 480px*/
-@media only screen and (max-width:480px){
-  .filter{
-    align-items: center;
-  }
-  nav{
-    width: 50%;
-    ul li{
-      margin-top: .5em;
-    }
-  }
-h1{
-  body{
-    font-size: 150%;
-  }
-}
-
+.section-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

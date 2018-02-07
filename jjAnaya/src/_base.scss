@@ -9,7 +9,11 @@ $color-primary: #00abff;
   --color-secondary-dark: #55967e;
 
   --color-gray-light: #e4e7ec;
-  --color-gray-dark: #2c333f;
+  --color-gray-dark: #202632;
+
+
+  --color-gray-dark-t: rgba(32, 38, 50, 0.50);
+  --color-gray-darkness-t: rgba(32, 38, 50, 0.80);
 
 }
 
@@ -27,7 +31,6 @@ box-sizing: inherit;
 html{
   box-sizing: border-box;
   font-size: 16pt;
-
 }
 
 body{
@@ -35,7 +38,4 @@ body{
   font-weight: 300;
   text-rendering: optimizeLegibility;
   line-height: 1.6;
-  color: $color-primary;
-  
-
 }
