@@ -1,0 +1,63 @@
+
+.section-box{
+  display: flex;
+  background-image: linear-gradient(to right bottom, var(--color-gray-lighten-t),var(--color-gray-light-t)), url(/assets/background/bg-feature-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.features{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.box-feature{
+  margin-top: 2rem;
+  width: 25%;
+  background-color: var(--color-gray-light);
+  border-radius: .3rem;
+}
+
+.feature-title{
+   color: var(--color-secondary);
+}
+
+.ft-img{
+  width: 100%;
+}
+
+
+/* Big tablets to 1200px (widths smaller that the 1140px row)*/
+@media only screen and (max-width:1200px){
+
+}
+
+@media only screen and (max-width:1024px){
+
+  .box-feature{
+    width: 40%;
+  }
+
+
+}
+
+/*small phones to  small tablets from 481px to 767px*/
+@media only screen and (max-width:767px){
+
+  .box-feature{
+    width: 70%;
+  }
+
+}
+
+/*small phones 0 to 480px*/
+@media only screen and (max-width:480px){
+
+
+}

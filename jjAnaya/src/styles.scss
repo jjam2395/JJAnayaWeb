@@ -18,7 +18,8 @@ h1,h2,h3,h4,h5,h6{
 
 h1,
 h2,
-h3{
+h3,
+h4{
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -66,8 +67,8 @@ color: var(--color-gray-dark);
 .short-text{
   color: --color-gray-dark;
   line-height: 145%;
-  width: 70%;
-  padding-bottom: 10rem;
+  width: 80%;
+  //padding-bottom: 10rem;
 
 }
 
@@ -75,4 +76,76 @@ color: var(--color-gray-dark);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+
+.section-box{
+  background-color: #fff;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+
+/* Big tablets to 1200px (widths smaller that the 1140px row)*/
+@media only screen and (max-width:1200px){
+  .section-box{
+    padding: 5rem 1rem;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .section-box{
+    padding: 2rem .5rem;
+  }
+
+  .short-text{
+    //padding-bottom: 7rem;
+    width: 85%;
+  }
+}
+
+/*small phones to  small tablets from 481px to 767px*/
+@media only screen and (max-width:767px){
+
+  body{
+  font-size: 100%;
+  }
+
+  .title-main{
+    font-size: 130%; ;
+  }
+
+  .section-box{
+    padding: 2rem .5em;
+  }
+
+  .short-text{
+    width: 85%;
+    //padding-bottom: 4rem;
+  }
+
+}
+
+/*small phones 0 to 480px*/
+@media only screen and (max-width:480px){
+
+  body{
+  font-size: 100%;
+  }
+
+  .title-main{
+    font-size: 150%;
+    }
+
+
+  .section-box{
+    padding: 3rem .5em;
+  }
+
+  .short-text{
+    width: 90%;
+    //padding-bottom: 4rem;
+  }
+
+
 }
