@@ -8,7 +8,8 @@
   //height: 100vh;
   background-attachment: fixed;
 
-  h4{
+  .title-main{
+    margin-top:1.5em;
     color: var(--color-gray-light);
   }
 
@@ -17,8 +18,9 @@
   border-radius: 50%;
   }
 
-  p{
+  .short-text{
     color: var(--color-gray-light);
+    margin-top: 1rem;
   }
 
 }
