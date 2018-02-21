@@ -111,7 +111,26 @@ width: 70%;
   margin: 1.5rem 0;
   align-items: center;
   flex-wrap: wrap;
+
+  a{
+      text-decoration: none;
+
+    &:visited, &:link{
+      color: var(--color-gray-lighten-t);
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+      padding-bottom: .5em;
+    }
+
+    &:hover, &:active{
+      color:var(--color-gray-light);
+      border-bottom: 2px solid var(--color-secondary-light);
+    }
+
+  }
 }
+
+
 
 .main-menu {
   width: 100%;
