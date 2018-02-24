@@ -10,6 +10,8 @@ import { ProductFeatureComponent } from './components/product-feature/product-fe
 import { FooterComponent } from './components/footer/footer.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     FirstSectionComponent,
     ProductFeatureComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule

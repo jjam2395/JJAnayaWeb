@@ -52,6 +52,35 @@ a{
 
 }
 
+.social__icon{
+  align-items: center;
+  height: 1.3rem;
+  width: 1.3rem;
+  transition: transform .3s, fill .2s;
+  fill: var(--color-gray-lighten-t);
+}
+
+.social__icon:hover{
+transform: translateY(-2px);
+}
+
+/*
+#linkedin:hover{
+  fill:#0077B5;
+}
+
+#github:hover{
+  fill:#c9510c;
+}
+
+#twitter:hover{
+  fill:#55acee;
+}
+
+#instagram:hover{
+  fill:#e4405f;
+}
+*/
 
 /*---------------------
 ------..HEADER..--------
