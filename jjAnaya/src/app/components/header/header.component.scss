@@ -80,9 +80,6 @@
 }
 */
 
-nav{
-width: 70%;
-}
 
 
 .title-box{
@@ -117,6 +114,19 @@ width: 70%;
   }
 }
 
+////////////
+// Mainnav
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  //flex: 1 0 100%;
+  .navigation-box{
+  display: flex;
+  flex: 0 0 70%;
+  }
+}
+
 .main-menu{
   .navigation-box{
     a{
@@ -138,13 +148,26 @@ width: 70%;
 
 
 
-.main-menu {
-  width: 100%;
-  .navigation-box{
-  width: 70%;
-  }
+////////////
+// Stickynav
+
+.sticky .navigation-box{
+  justify-content:justify-content;
+  margin: .36rem 1.5rem;
+  flex: 0 0 35%;
 }
 
+
+.sticky{
+  position: fixed;
+  top:0;
+  left:0;
+  flex: 0 0 100%;
+  background-color: var(--color-primary-dark);
+  justify-content: flex-start;
+  box-shadow: 0 1px 2px var(--color-gray-dark-t);
+  z-index: 9999;
+}
 
 .subtitle{
   display: flex;
@@ -169,11 +192,7 @@ width: 70%;
       text-align:center;
     }
   }
-  .main-menu{
-    .navigation-box{
-      width: 100%;
-    }
-  }
+
 
 .homepage-hero-module{
   .video-container{
@@ -182,6 +201,13 @@ width: 70%;
     }
   }
 }
+
+
+.sticky .navigation-box{
+  margin: .50rem 1.5rem;
+  flex: 0 0 50%;
+}
+
 }
 
 /*small phones to  small tablets from 481px to 767px*/
@@ -190,9 +216,9 @@ width: 70%;
 {
   width: 100%;
   .navigation-box{
-    width: 100%;
     li{
-      width: 100%;
+      //width: 100%;
+      font-size: 90%;
       text-align: center;
     }
   }
@@ -204,6 +230,11 @@ width: 70%;
   .social-links{
     width: 100%;
   }
+}
+
+.sticky .navigation-box{
+  margin: .80rem 1.5rem;
+  flex: 0 0 70%;
 }
 
 
@@ -219,14 +250,43 @@ width: 70%;
   .social-links{
     margin-top: 1.5rem;
   }
-  nav{
+  /*nav{
     width: 50%;
+  }*/
+
+  .main-menu {
+    .navigation-box{
+    font-size: 80%;
+    flex: 0 0 100%;
+    margin: 0;
+    }
   }
+
 h1, h2{
       font-size: 150%;
 }
 .navigation-box{
-  margin: 0;
+ margin: 0;
 }
+
+.sticky .navigation-box{
+  margin: .80rem 1.5rem;
+  flex: 0 0 85%;
+
+    a{
+      &:visited, &:link{
+        padding-bottom: .8rem;
+      }
+
+      &:hover, &:active{
+        color:var(--color-gray-light);
+        border-bottom: 2px solid var(--color-secondary-light);
+      }
+    }
+
+
+}
+
+
 
 }

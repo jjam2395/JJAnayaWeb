@@ -57,7 +57,7 @@
   .box-icon{
     display: flex;
     justify-content: center;
-    width: 30%;
+    flex: 0 0 30%;
     border-right: 1px solid var(--color-gray-dark-t);
     padding: .5em;
   }
@@ -65,8 +65,11 @@
   .text-feature{
     display: flex;
     justify-content: flex-start;
-    width: 70%;
+    flex: 0 0 70%;
     padding-left: 1em;
+    font-size: 80%;
+    font-weight: 400;
+    color: var(--color-gray-darkness-t);
   }
 }
 

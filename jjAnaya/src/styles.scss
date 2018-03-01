@@ -62,6 +62,14 @@ a{
 
 .social__icon:hover{
 transform: translateY(-2px);
+fill: var(--color-gray-light);
+}
+
+.feature__icon{
+  align-items: center;
+  height: 1.3rem;
+  width: 1.3rem;
+  fill: var(--color-gray-dark);
 }
 
 /*
@@ -108,6 +116,18 @@ color: var(--color-gray-dark);
   background-color: #fff;
   align-items: center;
   padding: 4rem 1rem;
+}
+
+
+/* ---------------------------------------------------*/
+/* Animations */
+/* ---------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4{
+  opacity: 0;
 }
 
 

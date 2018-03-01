@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var  jquery:any;
+declare var $:any;
 @Component({
   selector: 'app-first-section',
   templateUrl: './first-section.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstSectionComponent implements OnInit {
 
-  constructor() { }
+ constructor(){
 
-  ngOnInit() {
-  }
+
+ }
+
+ ngOnInit() {
+
+
+
+ }
+
 
 }
