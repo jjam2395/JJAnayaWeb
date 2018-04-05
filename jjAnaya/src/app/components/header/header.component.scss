@@ -80,8 +80,6 @@
 }
 */
 
-
-
 .title-box{
   width: 100%;
   display: flex;
@@ -95,40 +93,24 @@
   }
   h1{
     //width: 50%;
-
     flex: 0 0 40%;
-  }
-}
-
-.navigation-box{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content:space-around;
-  margin: 1.5rem 0;
-  align-items: center;
-  flex-wrap: wrap;
-
-  a{
-      text-decoration: none;
   }
 }
 
 ////////////
 // Mainnav
-
-.main-menu {
+.main-menu{
   width: 100%;
   display: flex;
-  //flex: 1 0 100%;
   .navigation-box{
-  display: flex;
-  flex: 0 0 70%;
-  }
-}
-
-.main-menu{
-  .navigation-box{
+    display: flex;
+    flex: 0 0 70%;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-around;
+    margin: 1.5rem 0;
+    align-items: center;
+    flex-wrap: wrap;
     a{
       &:visited, &:link{
         color: var(--color-gray-lighten-t);
@@ -137,7 +119,6 @@
         padding-bottom: .5em;
 
       }
-
       &:hover, &:active{
         color:var(--color-gray-light);
         border-bottom: 2px solid var(--color-secondary-light);
@@ -145,8 +126,6 @@
     }
   }
 }
-
-
 
 ////////////
 // Stickynav
@@ -283,10 +262,7 @@ h1, h2{
         border-bottom: 2px solid var(--color-secondary-light);
       }
     }
-
-
 }
-
 
 
 }

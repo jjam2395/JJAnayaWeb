@@ -1,0 +1,31 @@
+.social-links{
+  display: flex;
+  width: 30%;
+}
+
+.navigation-box{
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 1em;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+
+.social__icon{
+  align-items: center;
+  height: 1.3rem;
+  width: 1.3rem;
+  transition: transform .3s, fill .2s;
+  fill: var(--color-gray-lighten-t);
+}
+
+.social__icon:hover{
+transform: translateY(-2px);
+fill: var(--color-gray-light);
+}

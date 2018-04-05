@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FirstSectionComponent } from './components/first-section/first-section.component';
 import { ProductFeatureComponent } from './components/product-feature/product-feature.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SocialIconsComponent } from './components/shared/social-icons/social-icons.component';
 
 
 
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FirstSectionComponent,
     ProductFeatureComponent,
     FooterComponent,
+    SocialIconsComponent,
   ],
   imports: [
     BrowserModule

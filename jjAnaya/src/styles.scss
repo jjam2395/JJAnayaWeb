@@ -52,19 +52,6 @@ a{
 
 }
 
-.social__icon{
-  align-items: center;
-  height: 1.3rem;
-  width: 1.3rem;
-  transition: transform .3s, fill .2s;
-  fill: var(--color-gray-lighten-t);
-}
-
-.social__icon:hover{
-transform: translateY(-2px);
-fill: var(--color-gray-light);
-}
-
 .feature__icon{
   align-items: center;
   height: 1.3rem;
