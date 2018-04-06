@@ -62,6 +62,7 @@
 
 
 
+
 	video{
 	    background-size: cover;
 	    top: 0;
@@ -81,6 +82,7 @@
 */
 
 .title-box{
+  /*
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +97,13 @@
     //width: 50%;
     flex: 0 0 40%;
   }
+*/
+width: 100%;
+display: grid;
+align-items: center;
+justify-content:space-around;
+grid-template-columns: minmax(30%, 40%) minmax(25%, 30%);
+margin: 1rem 0 4rem 0;
 }
 
 ////////////
@@ -159,17 +168,19 @@
 /* Big tablets to 1200px (widths smaller that the 1140px row)*/
 @media only screen and (max-width:1200px){
 
+  .title-box{
+    h1{
+      //width: 100%;
+      align-content: center;
+      text-align:center;
+    }
+  }
+
 }
 
 @media only screen and (max-width:1024px){
   video{
     width: auto;
-  }
-  .title-box{
-    h1{
-      //width: 100%;
-      text-align:center;
-    }
   }
 
 
@@ -205,10 +216,13 @@
 
 .title-box{
   //align-items: center;
+  grid-template-columns: 80%;
+/*
   margin: .5rem 0;
   .social-links{
     width: 100%;
   }
+*/
 }
 
 .sticky .navigation-box{
